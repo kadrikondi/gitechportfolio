@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    font-family: cursive;
+}
+
+
+header {
+    width: 100%;
+    position: relative;
+    background: url('pix/kondp.png') no-repeat;
+    background-color: black;
+    color: white;
+    height: 160px;
+}
+
+#brand {
+    position: absolute;
+    font-size: 3em;
+    margin-left: 50px;
+    top: 60px;
+    left: 100px;
+
+
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+    background-color: rgb(26, 66, 66);
+
+
+}
+
+nav ul li :hover {
+    background-color: blue;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+
+.slider {
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: url('pix/lapy.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+.slider>* {
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    height: 400px;
+    animation: kondi 12s infinite;
+
+
+}
+
+slide:nth-child(1) {
+    width: 100%;
+    background: url('pix/lp1.jpeg');
+    background-size: cover;
+    background-position: center;
+    animation-delay: -1s
+}
+
+slide:nth-child(2) {
+    width: 100%;
+    background: url('pix/lp3.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-delay: 2s;
+}
+
+slide:nth-child(3) {
+    width: 100%;
+    background: url('pix/lapy.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-delay: 6s;
+}
+
+slide:nth-child(4) {
+    width: 100%;
+    background: url('pix/lp3.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-delay: 8s;
+}
+@keyframes kondi{
+    0%{left:100% ; width: 100%;}
+    25%{left:0%;}
+    50%{left:0%;}
+    80%{left:-100%;}
+    100%{left: 100%;}
+}
